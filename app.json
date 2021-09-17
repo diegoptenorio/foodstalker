@@ -4,9 +4,9 @@
     "slug": "mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/img/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/img/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#8E2E5D"
     },
@@ -21,12 +21,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./assets/img/icon.png",
         "backgroundColor": "#8E2E5D"
       }
     },
     "web": {
-      "favicon": "./assets/icon.png"
+      "favicon": "./assets/img/icon.png"
     }
   }
 }

@@ -6,10 +6,10 @@ import Logo from '../../assets/img/logo.png';
 import styles from './styles';
 
 const Header = () => (
-    <View style={styles.container}>
-        <View style={styles.header}>
+    <View style={ styles.container }>
+        <View style={ styles.header }>
             <Text></Text>
-            <Image source={Logo} />
+            <Image source={ Logo } />
             <Text></Text>
         </View>
     </View>

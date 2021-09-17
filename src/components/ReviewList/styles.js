@@ -7,10 +7,31 @@ export default StyleSheet.create({
     
     listHeader: {
         flexDirection: 'row',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        paddingVertical: 8
     },
 
     listHeaderTitle: {
       color: '#fff'
+    },
+
+    reviewType: {
+      alignItems: 'center',
+      flex: 1,
+      flexDirection: 'row',
+      justifyContent: 'flex-end',
+      paddingHorizontal: 10
+    },
+
+    reviewQuantity: {
+      alignItems: 'center',
+      flex: 1,
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+      paddingHorizontal: 10
+    },
+
+    icon: {
+      marginHorizontal: 5
     }
 });
