@@ -23,8 +23,5 @@
   "devDependencies": {
     "@babel/core": "^7.9.0"
   },
-  "rnpm": {
-    "assets": ["./assets/fonts/"]
-  },
   "private": true
 }
