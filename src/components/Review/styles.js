@@ -7,7 +7,7 @@ export default StyleSheet.create({
     },
 
     img: {
-        height: 100,
+        height: 120,
         resizeMode : 'stretch',
     },
 
@@ -19,7 +19,8 @@ export default StyleSheet.create({
 
     descriptionName: {
         color: '#fff',
-        fontSize: 20
+        fontSize: 20,
+        maxHeight: 55
     },
 
     descriptionLocation: {

@@ -12,7 +12,8 @@ export default StyleSheet.create({
     },
 
     listHeaderTitle: {
-      color: '#fff'
+      color: '#fff',
+      fontSize: 12
     },
 
     reviewType: {
@@ -20,7 +21,7 @@ export default StyleSheet.create({
       flex: 1,
       flexDirection: 'row',
       justifyContent: 'flex-end',
-      paddingHorizontal: 10
+      paddingHorizontal: 6
     },
 
     reviewQuantity: {
@@ -28,10 +29,10 @@ export default StyleSheet.create({
       flex: 1,
       flexDirection: 'row',
       justifyContent: 'flex-start',
-      paddingHorizontal: 10
+      paddingHorizontal: 14
     },
 
     icon: {
-      marginHorizontal: 5
+      marginRight: 8
     }
 });

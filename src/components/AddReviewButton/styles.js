@@ -1,33 +1,30 @@
 import { Dimensions, StyleSheet } from 'react-native';
-import Constants from 'expo-constants';
+import { COLOR_SCHEME } from '../../constants';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
 export default StyleSheet.create({
     container: {
-      paddingHorizontal: 24,
-      paddingTop: Constants.statusBarHeight + 20,
-      paddingBottom: 20
-    },
-
-    header: {
-      flexDirection: 'row',
       alignItems: 'center',
-      justifyContent: 'space-between'
+      flexDirection: 'row',
+      paddingHorizontal: 24,
+      paddingVertical: 16,
     },
 
-    iconBack: {
-      marginRight: 22,
-      opacity: 0
+    toucheable: {
+        flexDirection: 'row',
+        justifyContent: 'center',
     },
 
-    logo: {
-      resizeMode : 'stretch'
+    iconAdd: {
+      marginRight: 15
     },
 
-    iconMenu: {
-
+    textAdd: {
+      color: '#E0A467',
+      fontSize: 20,
+      fontWeight: 'bold'
     },
 
     gradient: {

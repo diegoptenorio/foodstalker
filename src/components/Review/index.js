@@ -1,6 +1,12 @@
 import React from 'react';
 import { FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
 
+import { EN } from '../../constants';
+
+import { scoreToRating } from './../../utils';
+
+import Rating from '../Rating';
+
 import styles from './styles';
 
 const Review = ({ data }) => (
@@ -23,8 +29,12 @@ const Review = ({ data }) => (
                 </View>
                 <View style={ styles.descriptionContainer }>
                     <Text style={ styles.descriptionName }>{ review.name }</Text>
-                    <Text style={ styles.descriptionLocation }>{ review.location }</Text>
-                    <Text>{ review.score }</Text>
+                    <Text style={ styles.descriptionLocation }>{ `${EN.AT} ${review.location}` }</Text>
+                    <Rating
+                        data={ scoreToRating(review.score) }
+                        disabled={ true }
+                        size={ 'small' }
+                    />
                 </View>
             </TouchableOpacity>
         )}

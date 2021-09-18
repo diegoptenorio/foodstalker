@@ -1,6 +1,4 @@
-import { CONSTANTS } from '../constants';
-
-const { COLOR_SCHEME } = CONSTANTS;
+import { COLOR_SCHEME } from '../constants';
 
 export const matchColorToReviewType = (type) => {
     switch (type) {
