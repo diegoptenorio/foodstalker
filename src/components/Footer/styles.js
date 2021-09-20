@@ -9,7 +9,8 @@ export default StyleSheet.create({
       alignItems: 'center',
       flexDirection: 'row',
       paddingHorizontal: 24,
-      paddingVertical: 16,
+      paddingBottom: 17,
+      paddingTop: 15,
     },
 
     toucheable: {

@@ -17,7 +17,7 @@ import IconAdd from '../../assets/img/icon_add.png';
 
 import styles from './styles';
 
-const AddReviewButton = () => (
+const Footer = () => (
     <View style={ styles.header }>
         <TouchableOpacity style={ styles.toucheable }>
             <View style={ styles.container }>
@@ -34,4 +34,4 @@ const AddReviewButton = () => (
     </View>
 )
 
-export default AddReviewButton;
+export default Footer;
