@@ -2,10 +2,9 @@
 
 <p align="center">
  <a href="#about">About</a> •
- <a href="#setup">Setup</a> • 
+ <a href="#ui/ux">UI/UX</a> • 
  <a href="#features">Features</a> • 
  <a href="#tech">Tech</a> •
- <a href="#contribution">Contribution</a> • 
  <a href="#autor">Autor</a> 
 </p>
 
@@ -18,8 +17,35 @@ FoodStalker is a mobile application for those who love to find and share good ga
 
 # Setup
 
-### Clone Tonguemeleon Repository
+### Clone FoodStalker Repository
 $ git clone <https://github.com/diegoptenorio/foodstalker.git>
+
+### Install Dependencies
+$ npm install
+
+### Run Project
+$ npm start
+
+### Setting mobile device
+<ul>
+  <li>Install Expo Go on your mobile device</li>
+  <li>Open Expo Go and capture the QR code of localhost on yout browser</li>
+  <li>Enjoy</li>
+</ul>
+
+# UX/UI
+
+The final version of the app should be like this:
+https://www.behance.net/gallery/95592223/FoodStalker
+
+# Tech
+
+Programning Languages and Tools:
+
+- [Figma](https://www.figma.com)
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
 
 # Autor
 
