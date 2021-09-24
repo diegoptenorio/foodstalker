@@ -7,7 +7,7 @@ import styles from './styles';
 
 const Home = () => (
     <View style={ styles.home }>
-        <Header />
+        <Header isHome={ true } />
         <ReviewList />
         <Footer />
     </View>

@@ -17,30 +17,32 @@ import styles from './styles';
 
 const Detail = () => (
     <View style={ styles.detail }>
-        <Header />
+        <Header isHome={ false } />
         <Image
             source={{ uri: 'https://www.diegotenorio.com.br/p/foodstalker/carborana.jpg' }}
             style={ styles.image }
         />
-        <Text style={ styles.name }>Carbonara</Text>
-        <Text style={ styles.description }>At JO's - Diego Tenório</Text>
-        <Rating
-            score={ 3 }
-            disabled={ false }
-            size={ 'small' }
-        />
-        <Button
-            action={ '' }
-            icon={ IconMap }
-            label='See Map'
-            type={ 'Lunch' }
-        />
-        <Button
-            action={''}
-            icon={ IconReport }
-            label='Report Review'
-            type={ 'Lunch' }
-        />
+        <View style={{ paddingLeft: 25, paddingRight: 25 }}>
+            <Text style={ styles.name }>Carbonara</Text>
+            <Text style={ styles.description }>At JO's - Diego Tenório</Text>
+            <Rating
+                score={ 3 }
+                disabled={ false }
+                size={ 'small' }
+            />
+            <Button
+                action={ (e) => e.preventDefault }
+                icon={ IconMap }
+                label='See Map'
+                type={ 'Lunch' }
+            />
+            <Button
+                action={ (e) => e.preventDefault }
+                icon={ IconReport }
+                label='Report Review'
+                type={ 'Lunch' }
+            />
+        </View>
         <Footer />
     </View>
 );

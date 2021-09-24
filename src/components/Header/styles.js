@@ -19,6 +19,11 @@ export default StyleSheet.create({
 
     iconBack: {
       marginRight: 22,
+      opacity: 1
+    },
+
+    hidden: {
+      marginRight: 22,
       opacity: 0
     },
 

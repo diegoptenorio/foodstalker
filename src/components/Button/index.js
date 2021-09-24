@@ -14,8 +14,11 @@ const Button = ({ action, icon, label, type  }) => (
         onPress={ action }
         style={{ 
             backgroundColor: matchColorToReviewType(type),
+            borderRadius: 25,
             flexDirection: 'row',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            marginBottom: 20,
+            padding: 12
         }}
     >
         <Image
