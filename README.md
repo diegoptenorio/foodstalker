@@ -40,9 +40,10 @@ https://www.behance.net/gallery/95592223/FoodStalker
 
 # Tech
 
-Programning Languages and Tools:
+Stack and tools:
 
 - [Figma](https://www.figma.com)
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.dev/)
