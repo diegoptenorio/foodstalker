@@ -4,7 +4,7 @@ import { FlatList, Image, Text, View } from 'react-native';
 import NetworkRequest from '../NetworkRequest';
 import Review from '../Review';
 
-import useLoadingReviews from '../../hooks/useLoadingReviews';
+import useGetReviews from '../../hooks/useGetReviews';
 
 import { 
     matchColorToReviewType,
@@ -25,7 +25,7 @@ const ReviewList = () => {
         isNoContent,
         reviews,
         fetchReviews
-    } = useLoadingReviews();
+    } = useGetReviews();
 
     return (
         <View style={ styles.container }>
@@ -64,7 +64,7 @@ const ReviewList = () => {
                                     <Text style={ styles.listHeaderTitle }>{ returnReviewMessage(review.content.length) }</Text>
                                 </View>
                             </View>
-                            <Review data={review} />
+                            <Review data={ review } />
                         </View>
                     )}
                     showsVerticalScrollIndicator={ false }

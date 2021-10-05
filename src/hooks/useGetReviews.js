@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import api from '../services/api';
 
-const useLoadingReviews = () => {
+const useGetReviews = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
     const [isNoContent, setIsNoContent] = useState(false);
@@ -17,7 +17,7 @@ const useLoadingReviews = () => {
             }
             else {
                 setIsNoContent(false)
-                setReviews(response.data.review.data)
+                setReviews(response.data.reviews);
             }
         })
         .catch(function() {
@@ -41,4 +41,4 @@ const useLoadingReviews = () => {
     }
 }
 
-export default useLoadingReviews;
+export default useGetReviews;

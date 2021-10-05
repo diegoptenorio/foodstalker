@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Loading from '../Loading';
-import Error from '../Error';
-import NoContent from '../NoContent';
+import Loading from './Loading';
+import Error from './Error';
+import NoContent from './NoContent';
 
 import { View  } from 'react-native';
 

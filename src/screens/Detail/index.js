@@ -23,11 +23,14 @@ const Detail = ({ route }) => {
         location,
         autor,
         score
-    } = route.params
+    } = route.params.review;
+
+    const { type } = route.params;
 
     return (
         <View style={ styles.detail }>
             <Header isHome={ false } />
+            <Text>{JSON.stringify(type)}</Text>
             <Image
                 source={{ uri: picture }}
                 style={ styles.image }

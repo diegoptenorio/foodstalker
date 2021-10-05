@@ -1,18 +1,18 @@
 import React from 'react';
 
-import IconAlert from '../../assets/img/icon_alert.png';
+import IconInfo from '../../../assets/img/icon_info.png';
 import { Button, Image, Text, View  } from 'react-native';
 
 import styles from './styles';
 
-const Error = ({ fetchReviews }) => {
+const NoContent = ({ fetchReviews }) => {
     return (
         <View style={ styles.container }>
-            <Image source={ IconAlert } />
-            <Text style={ styles.message }>Sorry, Something went wrong</Text>
+            <Image source={ IconInfo } />
+            <Text style={ styles.message }>No Content</Text>
             <Button title='Try Again' onPress={() => fetchReviews()} />
         </View>
     )
 };
 
-export default Error;
+export default NoContent;

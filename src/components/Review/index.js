@@ -10,6 +10,7 @@ import Rating from '../Rating';
 import styles from './styles';
 
 const Review = ({ data }) => {
+    const { type } = data;
     const navigation = useNavigation();
 
     const goTo = (component, props) => {
@@ -23,7 +24,7 @@ const Review = ({ data }) => {
             keyExtractor={ review => review.key }
             renderItem={({ item: review, index }) => (
                 <TouchableOpacity
-                    onPress={() => goTo('Detail', review) }
+                    onPress={() => goTo('Detail', { review, type }) }
                     style={{ 
                         flexDirection: 'row',
                         paddingVertical: 15,
