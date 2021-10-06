@@ -20,5 +20,15 @@ export default StyleSheet.create({
     description: {
         color: '#fff',
         marginBottom: 20
+    },
+
+    descContainer: {
+        paddingLeft: 25,
+        paddingRight: 25,
+        paddingBottom: 30
+    },
+
+    infoContainer: {
+        marginBottom: 20
     }
 });

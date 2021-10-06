@@ -17,7 +17,7 @@ const Button = ({ action, icon, label, type  }) => (
             borderRadius: 25,
             flexDirection: 'row',
             justifyContent: 'center',
-            marginBottom: 20,
+            marginTop: 20,
             padding: 12
         }}
     >

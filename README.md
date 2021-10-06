@@ -26,6 +26,9 @@ $ npm install
 ### Run Project
 $ npm start
 
+### Run Project
+Config .env file
+
 ### Setting mobile device
 <ul>
   <li>Install Expo Go on your mobile device</li>

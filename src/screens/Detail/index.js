@@ -6,9 +6,12 @@ import {
 } from 'react-native';
 
 import Header from '../../components/Header';
+import ReviewType from '../../components/ReviewType';
 import Rating from '../../components/Rating';
 import Footer from '../../components/Footer';
 import Button from '../../components/Button';
+
+import { matchColorToReviewType } from '../../utils/matchColorToReviewType';
 
 import IconMap from '../../assets/img/icon_map.png';
 import IconReport from '../../assets/img/icon_report.png';
@@ -30,31 +33,37 @@ const Detail = ({ route }) => {
     return (
         <View style={ styles.detail }>
             <Header isHome={ false } />
-            <Text>{JSON.stringify(type)}</Text>
-            <Image
-                source={{ uri: picture }}
-                style={ styles.image }
-            />
-            <View style={{ paddingLeft: 25, paddingRight: 25 }}>
-                <Text style={ styles.name }>{name}</Text>
-                <Text style={ styles.description }>{`At ${location} - ${autor}`}</Text>
-                <Rating
-                    score={ score }
-                    disabled={ false }
-                    size={ 'small' }
+            <View style={{ backgroundColor: matchColorToReviewType(type), flex: 1 }}>
+                <ReviewType type={ type } />
+                <Image
+                    source={{ uri: picture }}
+                    style={ styles.image }
                 />
-                <Button
-                    action={ (e) => e.preventDefault }
-                    icon={ IconMap }
-                    label='See Map'
-                    type={ 'Lunch' }
-                />
-                <Button
-                    action={ (e) => e.preventDefault }
-                    icon={ IconReport }
-                    label='Report Review'
-                    type={ 'Lunch' }
-                />
+                <View style={{ backgroundColor: 'rgba(0, 0, 0, 0.20)', flex: 1 }}>
+                    <View style={ styles.descContainer }>
+                        <View style={ styles.infoContainer }>
+                            <Text style={ styles.name }>{name}</Text>
+                            <Text style={ styles.description }>{`At ${location} - ${autor}`}</Text>
+                            <Rating
+                                score={ score }
+                                disabled={ true }
+                                size={ 'small' }
+                            />
+                        </View>
+                        <Button
+                            action={ (e) => e.preventDefault }
+                            icon={ IconMap }
+                            label='See Map'
+                            type={ type }
+                        />
+                        <Button
+                            action={ (e) => e.preventDefault }
+                            icon={ IconReport }
+                            label='Report Review'
+                            type={ type }
+                        />
+                    </View>
+                </View>
             </View>
             <Footer />
         </View>

@@ -2,6 +2,7 @@ import React from 'react';
 import { 
     FlatList,
     Image,
+    Text,
     TouchableOpacity,
     View
 } from 'react-native';
@@ -17,29 +18,24 @@ const Rating = ({ score, disabled, size }) => {
     const data = scoreToRating(score);
 
     return (
-        <View style={ styles.starView }>
+        <View>
             <FlatList
                 data={ data }
                 keyExtractor={ data => data.key }
+                 style={ styles.starView }
+                 contentContainerStyle={{justifyContent: 'flex-start', flexDirection: 'row'}}
                 renderItem={({ item: star }) => (
-                    <View style={ styles.star }>
-                        { star.score &&
-                            <TouchableOpacity
-                                disabled={ disabled }
-                            >
+                    <View style={styles.star}>
+                        <TouchableOpacity disabled={ disabled }>
+                            { star.score &&
                                 <Image source={ FullStar } />
-                            </TouchableOpacity>
-                        }
-                        { !star.score &&
-                            <TouchableOpacity
-                                disabled={ disabled }
-                            >
+                            }
+                            { !star.score &&
                                 <Image source={ EmptyStar } />
-                            </TouchableOpacity>
-                        }
+                            }
+                        </TouchableOpacity>
                     </View>
                 )}
-                style={ styles.ratingList }
             />
         </View>
     )
