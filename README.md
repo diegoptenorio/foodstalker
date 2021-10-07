@@ -26,7 +26,7 @@ $ npm install
 ### Run Project
 $ npm start
 
-### Run Project
+### Environment Variables
 Config .env file
 
 ### Setting mobile device
