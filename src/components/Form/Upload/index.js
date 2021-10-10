@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Image, Text, TouchableOpacity } from "react-native";
 
-import IconCamera from '../../assets/img/icon_camera.png';
+import IconCamera from '../../../assets/img/icon_camera.png';
 
 import styles from './styles';
 

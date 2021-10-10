@@ -6,7 +6,7 @@ import {
     Text
 } from 'react-native';
 
-import { matchColorToReviewType } from '../../utils';
+import { matchColorToReviewType } from '../../../utils';
 import styles from './styles';
 
 const Button = ({ action, icon, label, type  }) => (

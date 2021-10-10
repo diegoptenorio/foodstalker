@@ -6,10 +6,10 @@ import {
 } from 'react-native';
 
 import Header from '../../components/Header';
-import SectionTitle from '../../components/SectionTitle';
+import Title from '../../components/Title';
 import Rating from '../../components/Rating';
 import Footer from '../../components/Footer';
-import Button from '../../components/Button';
+import Button from '../../components/Form/Button';
 
 import { matchColorToReviewType } from '../../utils/matchColorToReviewType';
 
@@ -35,7 +35,7 @@ const Detail = ({ route }) => {
         <View style={ styles.detail }>
             <Header isHome={ false } />
             <View style={{ backgroundColor: matchColorToReviewType(type), flex: 1 }}>
-                <SectionTitle type={ type } />
+                <Title type={ type } />
                 <View style={ styles.reviewContainer }>
                     <Image
                         source={{ uri: picture }}

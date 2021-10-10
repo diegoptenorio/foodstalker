@@ -4,7 +4,7 @@ import Loading from './Loading';
 import Error from './Error';
 import NoContent from './NoContent';
 
-import { View  } from 'react-native';
+import { View } from 'react-native';
 
 const NetworkRequest = props => {
     const {

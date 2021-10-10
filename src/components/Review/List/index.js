@@ -3,7 +3,7 @@ import { FlatList, Text, View } from 'react-native';
 
 import NetworkRequest from '../../NetworkRequest';
 import Item from '../Item';
-import SectionTitle from '../../SectionTitle';
+import Title from '../../Title';
 
 import useGetReviews from '../../../hooks/useGetReviews';
 
@@ -33,7 +33,7 @@ const List = () => {
                     keyExtractor={ review => review.type }
                     renderItem={({ item: review }) => (
                         <View style={{ backgroundColor: matchColorToReviewType(review.type) }}>
-                            <SectionTitle
+                            <Title
                                 type={ review.type }
                                 length={ review.content.length }
                             />

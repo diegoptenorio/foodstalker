@@ -2,13 +2,26 @@ import React from 'react';
 
 import { View } from 'react-native';
 
-import Upload from '../../Upload';
+import Upload from '../../Form/Upload';
+import Input from '../../Form/Input';
 
 import styles from './styles';
+import Title from '../../Title';
 
 const Create = () => (
-    <View style={ styles.container }>
-        <Upload />
+    <View>
+        <Title
+            type='Create'
+        />
+        <View style={ styles.container }>
+            <Upload />
+            <Input
+                placeholder='Name'
+            />
+            <Input
+                placeholder='Place'
+            />
+        </View>
     </View>
 );
 
