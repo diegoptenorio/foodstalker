@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/img/icon.png",
         "backgroundColor": "#8E2E5D"
-      }
+      },
+      "package": "com.foodstalker"
     },
     "web": {
       "favicon": "./assets/img/icon.png"

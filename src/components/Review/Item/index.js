@@ -1,15 +1,15 @@
 import React from 'react';
 import { FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
 
-import { EN } from '../../constants';
+import { EN } from '../../../constants';
 
 import { useNavigation } from '@react-navigation/core';
 
-import Rating from '../Rating';
+import Rating from '../../Rating';
 
 import styles from './styles';
 
-const Review = ({ data }) => {
+const Item = ({ data }) => {
     const { type } = data;
     const navigation = useNavigation();
 
@@ -52,4 +52,4 @@ const Review = ({ data }) => {
     )
 };
 
-export default Review;
+export default Item;

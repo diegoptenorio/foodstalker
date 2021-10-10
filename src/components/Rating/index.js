@@ -2,7 +2,6 @@ import React from 'react';
 import { 
     FlatList,
     Image,
-    Text,
     TouchableOpacity,
     View
 } from 'react-native';
@@ -14,7 +13,7 @@ import FullStar from '../../assets/img/full_star.png';
 
 import styles from './styles';
 
-const Rating = ({ score, disabled, size }) => {
+const Rating = ({ score, disabled }) => {
     const data = scoreToRating(score);
 
     return (

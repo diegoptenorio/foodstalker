@@ -5,9 +5,25 @@ export default StyleSheet.create({
         flex: 1
     },
 
+    reviewContainer: {
+        backgroundColor: 'rgba(0, 0, 0, 0.20)',
+        flex: 1,
+        paddingVertical: 15,
+        paddingRight: 15
+    },
+
+    shareContainer: {
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        paddingRight: 25
+    },
+
     image: {
-        height: 300,
-        resizeMode: 'stretch'
+        height: 250,
+        resizeMode: 'stretch',
+        borderBottomRightRadius: 40,
+        borderTopRightRadius: 40,
+        paddingRight: 10
     },
 
     name: {
@@ -24,7 +40,7 @@ export default StyleSheet.create({
 
     descContainer: {
         paddingLeft: 25,
-        paddingRight: 25,
+        paddingRight: 10,
         paddingBottom: 30
     },
 

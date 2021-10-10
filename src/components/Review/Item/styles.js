@@ -9,6 +9,8 @@ export default StyleSheet.create({
     img: {
         height: 120,
         resizeMode : 'stretch',
+        borderBottomRightRadius: 25,
+        borderTopRightRadius: 25
     },
 
     descriptionContainer: {

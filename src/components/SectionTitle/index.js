@@ -10,7 +10,7 @@ import IconReview from '../../assets/img/icon_review.png';
 
 import styles from './styles';
 
-const ReviewType = ({ type, length = false }) => {
+const SectionTitle = ({ type, length = false }) => {
     return (
         <View>
             { length === false &&
@@ -62,4 +62,4 @@ const ReviewType = ({ type, length = false }) => {
     )
 };
 
-export default ReviewType;
+export default SectionTitle;

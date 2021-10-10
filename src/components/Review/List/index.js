@@ -1,17 +1,17 @@
 import React from 'react';
-import { FlatList, View } from 'react-native';
+import { FlatList, Text, View } from 'react-native';
 
-import NetworkRequest from '../NetworkRequest';
-import Review from '../Review';
-import ReviewType from '../ReviewType';
+import NetworkRequest from '../../NetworkRequest';
+import Item from '../Item';
+import SectionTitle from '../../SectionTitle';
 
-import useGetReviews from '../../hooks/useGetReviews';
+import useGetReviews from '../../../hooks/useGetReviews';
 
-import { matchColorToReviewType } from '../../utils';
+import { matchColorToReviewType } from '../../../utils';
 
 import styles from './styles';
 
-const ReviewList = () => {
+const List = () => {
     const {
         isLoading,
         isError,
@@ -33,11 +33,11 @@ const ReviewList = () => {
                     keyExtractor={ review => review.type }
                     renderItem={({ item: review }) => (
                         <View style={{ backgroundColor: matchColorToReviewType(review.type) }}>
-                            <ReviewType
+                            <SectionTitle
                                 type={ review.type }
                                 length={ review.content.length }
                             />
-                            <Review data={ review } />
+                            <Item data={ review } />
                         </View>
                     )}
                     showsVerticalScrollIndicator={ false }
@@ -48,4 +48,4 @@ const ReviewList = () => {
     )
 };
 
-export default ReviewList;
+export default List;

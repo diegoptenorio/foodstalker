@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 
 import Header from '../../components/Header';
-import ReviewType from '../../components/ReviewType';
+import SectionTitle from '../../components/SectionTitle';
 import Rating from '../../components/Rating';
 import Footer from '../../components/Footer';
 import Button from '../../components/Button';
@@ -15,6 +15,7 @@ import { matchColorToReviewType } from '../../utils/matchColorToReviewType';
 
 import IconMap from '../../assets/img/icon_map.png';
 import IconReport from '../../assets/img/icon_report.png';
+import IconShare from '../../assets/img/icon_share.png';
 
 import styles from './styles';
 
@@ -34,12 +35,19 @@ const Detail = ({ route }) => {
         <View style={ styles.detail }>
             <Header isHome={ false } />
             <View style={{ backgroundColor: matchColorToReviewType(type), flex: 1 }}>
-                <ReviewType type={ type } />
-                <Image
-                    source={{ uri: picture }}
-                    style={ styles.image }
-                />
-                <View style={{ backgroundColor: 'rgba(0, 0, 0, 0.20)', flex: 1 }}>
+                <SectionTitle type={ type } />
+                <View style={ styles.reviewContainer }>
+                    <Image
+                        source={{ uri: picture }}
+                        style={ styles.image }
+                    />
+                    <View style={ styles.shareContainer }>
+                        <Button
+                            action={ (e) => e.preventDefault }
+                            icon={ IconShare }
+                            type={ type }
+                        />
+                    </View>
                     <View style={ styles.descContainer }>
                         <View style={ styles.infoContainer }>
                             <Text style={ styles.name }>{name}</Text>

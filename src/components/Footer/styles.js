@@ -1,4 +1,5 @@
 import { Dimensions, StyleSheet } from 'react-native';
+
 import { COLOR_SCHEME } from '../../constants';
 
 const windowWidth = Dimensions.get('window').width;
@@ -23,7 +24,7 @@ export default StyleSheet.create({
     },
 
     textAdd: {
-      color: '#E0A467',
+      color: COLOR_SCHEME.ACTION,
       fontSize: 20,
       fontWeight: 'bold'
     },
