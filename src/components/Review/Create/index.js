@@ -2,11 +2,15 @@ import React from 'react';
 
 import { View } from 'react-native';
 
+import Title from '../../Title';
 import Upload from '../../Form/Upload';
 import Input from '../../Form/Input';
+import Rating from '../../Rating';
+import Button from '../../Form/Button';
+
+import IconPost from '../../../assets/img/icon_post.png';
 
 import styles from './styles';
-import Title from '../../Title';
 
 const Create = () => (
     <View>
@@ -20,6 +24,12 @@ const Create = () => (
             />
             <Input
                 placeholder='Place'
+            />
+            <Rating />
+            <Button
+                label='Post'
+                icon={ IconPost }
+                type='Dinner'
             />
         </View>
     </View>

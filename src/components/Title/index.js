@@ -7,12 +7,15 @@ import IconBreakfast from '../../assets/img/icon_breakfast.png';
 import IconLunch from '../../assets/img/icon_lunch.png';
 import IconDinnner from '../../assets/img/icon_dinner.png';
 import IconReview from '../../assets/img/icon_review.png';
+import IconPlus from '../../assets/img/icon_plus.png';
 
 import styles from './styles';
 
 const Title = ({ type, length = false }) => {
     return (
-        <View>
+        <View style={{
+            backgroundColor: type === 'Create' ? 'rgba(0, 0, 0, 0.20)' : 'transparent'
+        }}>
             { length === false &&
                 <View style={ styles.listHeader }>
                     <View style={ styles.reviewTypeCenter }>
@@ -24,7 +27,10 @@ const Title = ({ type, length = false }) => {
                                 type === 'Lunch' ?
                                     IconLunch
                                 :
+                                type === 'Dinner' ?
                                     IconDinnner   
+                                :
+                                    IconPlus
                             }
                             style={ styles.icon }
                         />
