@@ -13,7 +13,7 @@ import IconPost from '../../../assets/img/icon_post.png';
 import styles from './styles';
 
 const Create = () => (
-    <View>
+    <View style={ styles.create }>
         <Title
             type='Create'
         />

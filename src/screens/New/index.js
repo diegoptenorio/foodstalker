@@ -2,15 +2,15 @@ import React from 'react';
 
 import { View } from 'react-native';
 
-import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Create from '../../components/Review/Create';
+import Footer from '../../components/Footer';
 
 const New = () => (
-    <View>
+    <View style={{ flex: 1 }}>
         <Header isHome={ false } />
         <Create />
-        <Footer />
+        <Footer isAddReview={ true } />
     </View>
 );
 

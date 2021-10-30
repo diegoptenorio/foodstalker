@@ -34,5 +34,9 @@ export default StyleSheet.create({
       width: windowWidth,
       position: 'absolute',
       zIndex: -1
+    },
+
+    hidden: {
+      opacity: 0
     }
 });

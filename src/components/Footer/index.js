@@ -17,7 +17,7 @@ import IconAdd from '../../assets/img/icon_add.png';
 
 import styles from './styles';
 
-const Footer = () => {
+const Footer = ({ isAddReview }) => {
     const navigation = useNavigation();
 
     const goTo = (component, props) => {
@@ -26,9 +26,9 @@ const Footer = () => {
     };
 
     return (
-        <View style={ styles.header }>
+        <View>
             <TouchableOpacity
-                style={ styles.toucheable }
+                style={ isAddReview ? styles.hidden : styles.toucheable }
                 onPress={() => goTo('New')}
             >
                 <View style={ styles.container }>

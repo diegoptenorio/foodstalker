@@ -73,7 +73,7 @@ const Detail = ({ route }) => {
                     </View>
                 </View>
             </View>
-            <Footer />
+            <Footer isAddReview={ false } />
         </View>
     )
 };

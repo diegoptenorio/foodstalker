@@ -8,7 +8,7 @@ import Header from '../../components/Header';
 const Menu = () => (
     <View>
         <Header isHome={ false } />
-        <Footer />
+        <Footer isAddReview={ false } />
     </View>
 );
 

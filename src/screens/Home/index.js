@@ -9,7 +9,7 @@ const Home = () => (
     <View style={ styles.home }>
         <Header isHome={ true } />
         <List />
-        <Footer />
+        <Footer isAddReview={ false } />
     </View>
 );
 
