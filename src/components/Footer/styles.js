@@ -37,6 +37,7 @@ export default StyleSheet.create({
     },
 
     hidden: {
-      opacity: 0
+      opacity: 0,
+      width: 0
     }
 });

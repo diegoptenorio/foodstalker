@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
     FlatList,
     Image,
@@ -13,19 +13,26 @@ import FullStar from '../../assets/img/full_star.png';
 
 import styles from './styles';
 
-const Rating = ({ score, disabled }) => {
-    const data = scoreToRating(score);
+const Rating = ({ disabled, score, size }) => {
+    const [newScore, setNewScore] = useState(scoreToRating(score));
+
+    const handleScore = value => {
+        setNewScore(scoreToRating(value));
+    };
 
     return (
         <View>
             <FlatList
-                data={ data }
+                data={ newScore }
                 keyExtractor={ data => data.key }
-                 style={ styles.starView }
+                 style={ size === 'large' ? styles.starViewLarge : styles.starView }
                  contentContainerStyle={{justifyContent: 'flex-start', flexDirection: 'row'}}
-                renderItem={({ item: star }) => (
+                renderItem={({ item: star, index }) => (
                     <View style={styles.star}>
-                        <TouchableOpacity disabled={ disabled }>
+                        <TouchableOpacity
+                            onPress={() => handleScore(index + 1)}
+                            disabled={ disabled }
+                        >
                             { star.score &&
                                 <Image source={ FullStar } />
                             }

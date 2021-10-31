@@ -25,7 +25,7 @@ const Create = () => (
             <Input
                 placeholder='Place'
             />
-            <Rating />
+            <Rating size='large' />
             <Button
                 label='Post'
                 icon={ IconPost }
